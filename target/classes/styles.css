@@ -1,0 +1,27 @@
+.label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text-field {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #ccc;
+}
+
+.button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.progress-bar {
+    -fx-accent: #4CAF50;
+}

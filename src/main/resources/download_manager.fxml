@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="your.package.DownloadController" spacing="10" padding="10">
+    <Label text="Download Manager" style="-fx-font-size: 24; -fx-font-weight: bold;"/>
+    <TextField fx:id="urlField" promptText="Enter URL to download"/>
+    <Button fx:id="selectDirectoryButton" text="Select Download Directory" onAction="#selectDownloadDirectory"/>
+    <Label fx:id="downloadDirectoryLabel" text="Download Directory:"/>
+    <Button fx:id="startButton" text="Start Download" onAction="#startDownload"/>
+    <Button fx:id="pauseButton" text="Pause" onAction="#pauseDownload"/>
+    <Button fx:id="resumeButton" text="Resume" onAction="#resumeDownload"/>
+    <ProgressBar fx:id="progressBar"/>
+    <Label fx:id="downloadSpeedLabel"/>
+    <Label fx:id="estimatedTimeLabel"/>
+    <TableView fx:id="historyTable">
+        <columns>
+            <TableColumn fx:id="urlColumn" text="URL"/>
+            <TableColumn fx:id="progressColumn" text="Progress"/>
+        </columns>
+    </TableView>
+</VBox>
